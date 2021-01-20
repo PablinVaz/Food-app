@@ -1,10 +1,11 @@
 <nav class="navTop">    
-    <% for(let i = 0; i < categories.length; i++) {%>           
+    <% for(let i = 0; i < categories.length; i++) {%> 
+        <% let element = categories[i];%>          
         <button class="botones-menu">
-            <a href="<%= categories[i].url_find%>">
+            <a href="/find_meals/<%= element.name%>">
                 <figure>
-                    <img src="<%= categories[i].img_url%>" alt="<%= categories[i].img_alt%>">
-                    <figcaption><p><%= categories[i].name%></p></figcaption>
+                    <img src="<%= element.img_url%>" alt="<%= element.img_alt%>">
+                    <figcaption><p><%= element.name%></p></figcaption>
                 </figure>
             </a>
         </button>            

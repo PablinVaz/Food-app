@@ -1,8 +1,8 @@
-const { Router } = require ('express')
-const router = Router()
+const { Router } = require ('express');
+const router = Router();
+const mealController = require('../controllers/meal.controller');
 
-// router.get('/', (req, res) =>{
-//     res.render('index');
-// });
+
+router.get('/', mealController.list);
 
 module.exports = router;

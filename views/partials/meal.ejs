@@ -3,14 +3,14 @@
     <article>           
         <img src="<%= meals[i].img_url%>" alt="<%= meals[i].img_alt%>">
         <div class="plato-info">
-            <p class="precio"><%= meals[i].price%></p>
+            <p class="precio"><%= meals[i].price%> &euro;</p>
             <h5><%= meals[i].name%></h5>
             <p class="descripcion-plato"><%= meals[i].description%></p>
         </div>
         <div class="contadores">
-            <button class="contador suma">+</button>
-            <p class="conta-cantidad">4</p>
-            <button class="contador resta">-</button>
+            <button class="contador suma">&#43;</button>
+            <p class="conta-cantidad">0</p>
+            <button class="contador resta">&#45;</button>
         </div>
     </article>
     <% } %>            

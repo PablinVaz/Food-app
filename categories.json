@@ -2,64 +2,49 @@
   "_id": {
     "$oid": "6007eb9b3d64092f342b171c"
   },
-  "img_url": "../img/tapas.svg",
+  "img_url": "../img/categories/tapas.svg",
   "img_alt": "Tapas",
-  "name": "Tapas",
-  "url_find":"/find_meals/<%= categories[i].name%>"
+  "name": "Tapas"
 },{
   "_id": {
     "$oid": "6007ebda3d64092f342b171d"
   },
-  "img_url": "../img/breakfast.svg",
+  "img_url": "../img/categories/breakfast.svg",
   "img_alt": "Desayunos",
-  "name": "Desayunos",
-  "url_find":"/find_meals/<%= categories[i].name%>"
+  "name": "Desayunos"
 },{
   "_id": {
     "$oid": "6007ed2b3d64092f342b171e"
   },
-  "img_url": "../img/ensalada.svg",
-  "img_alt": "Ensalada",
-  "name": "Ensalada",
-  "url_find":"/find_meals/<%= categories[i].name%>"
+  "img_url": "../img/categories/ensalada.svg",
+  "img_alt": "Ensaladas",
+  "name": "Ensaladas"
 },{
   "_id": {
     "$oid": "6007ed2b3d64092f342b171f"
   },
-  "img_url": "../img/fastfood.svg",
-  "img_alt": "Almuerzo",
-  "name": "Almuerzo",
-  "url_find":"/find_meals/<%= categories[i].name%>"
+  "img_url": "../img/categories/fastfood.svg",
+  "img_alt": "Almuerzos",
+  "name": "Almuerzos"
 },{
   "_id": {
     "$oid": "6007ed2b3d64092f342b1720"
   },
-  "img_url": "../img/dinner.svg",
+  "img_url": "../img/categories/dinner.svg",
   "img_alt": "Cenas",
-  "name": "Cenas",
-  "url_find":"/find_meals/<%= categories[i].name%>"
+  "name": "Cenas"
 },{
   "_id": {
     "$oid": "6007ed2b3d64092f342b1721"
   },
-  "img_url": "../img/dessert.svg",
+  "img_url": "../img/categories/dessert.svg",
   "img_alt": "Postres",
-  "name": "Postres",
-  "url_find":"/find_meals/<%= categories[i].name%>"
+  "name": "Postres"
 },{
   "_id": {
     "$oid": "6007ed2b3d64092f342b1722"
   },
-  "img_url": "../img/bebidas.svg",
+  "img_url": "../img/categories/bebidas.svg",
   "img_alt": "Bebidas",
-  "name": "Bebidas",
-  "url_find":"/find_meals/<%= categories[i].name%>"
-},{
-  "_id": {
-    "$oid": "6007ed2b3d64092f342b1723"
-  },
-  "img_url": "../img/all.svg",
-  "img_alt": "Todos",
-  "name": "Todos",
-  "url_find":"/find_meals/<%= categories[i].name%>"
+  "name": "Bebidas"
 }]
