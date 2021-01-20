@@ -4,7 +4,7 @@ header{
     margin: 0px 10px;
 }
 
-header img{
+header a{
     grid-area:	1 / 2 / 3 / 3
 }
 
