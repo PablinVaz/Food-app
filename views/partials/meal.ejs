@@ -1,0 +1,17 @@
+<main>           
+    <% for(let i = 0; i < meals.length; i++) {%>
+    <article>           
+        <img src="<%= meals[i].img_url%>" alt="<%= meals[i].img_alt%>">
+        <div class="plato-info">
+            <p class="precio"><%= meals[i].price%></p>
+            <h5><%= meals[i].name%></h5>
+            <p class="descripcion-plato"><%= meals[i].description%></p>
+        </div>
+        <div class="contadores">
+            <button class="contador suma">+</button>
+            <p class="conta-cantidad">4</p>
+            <button class="contador resta">-</button>
+        </div>
+    </article>
+    <% } %>            
+</main>
