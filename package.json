@@ -7,7 +7,7 @@
     "star": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "Javier Olano y Pablo Vazquez",
+  "author": "Pablo Vazquez, Jaime González y Javier Olano",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.5",
