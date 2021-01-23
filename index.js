@@ -1,30 +1,10 @@
 'use strict';
 
-const express = require('express');
-const ejs = require('ejs');
-const morgan = require('morgan');
-const path = require('path');
+require('dotenv').config();
 
-// INICIALIZATIONS
-const app = express();
-require('./database');
+const app = require ('./server');
+require('./database')
 
-
-// SETTINGS
-const port = 3000;
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
-// MIDDLEWARES
-app.use(morgan('dev'));
-app.use(express.json());
-app.use(express.urlencoded({extended:false}));
-
-
-// ROUTES
-app.use(require('./routes/index.routes'));
-app.use(require('./routes/meal.routes'));
-
-app.listen(port, console.log(`Escuchando por el ${port}`));
-
-app.use(express.static(__dirname + '/public'));
+app.listen(app.get('port'), () => {
+    console.log("Server on port", app.get('port'))
+})

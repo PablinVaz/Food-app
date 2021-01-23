@@ -2,7 +2,8 @@
 
 const mongoose = require('mongoose');
 
-const MONGODB = 'mongodb://localhost:27017/FoodApp';
+const {FOOD_APP_HOST, FOOD_APP_DATABASE} = process.env;
+const MONGODB = `mongodb://${FOOD_APP_HOST}/${FOOD_APP_DATABASE}`;
 
 mongoose.connect(MONGODB, {
     useNewUrlParser: true,
