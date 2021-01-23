@@ -1,6 +1,6 @@
 const{Schema,model} = require('mongoose');
 
-const mealSchema = new Schema({
+const cartItemSchema = new Schema({
 
     img_url:String,
     img_alt:String,
@@ -13,4 +13,4 @@ const mealSchema = new Schema({
 
 })
 
-module.exports = model('Meal', mealSchema, 'meals');
+module.exports = model('CartItem', cartItemSchema, 'cart');

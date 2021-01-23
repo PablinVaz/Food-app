@@ -15,13 +15,6 @@ mealController.list_meals = async (req,res)=>{
     const categories = await Category.find({});
     res.render('index',{categories:categories,meals:meals});
 }
-mealController.show = async (req,res)=>{
-
-    const meal = await Meal.findOne({_id:req.params.id});
-    const categories = await Category.find({});
-    res.render('detail',{categories:categories,meal});
-
-}
 
 mealController.save = async(req,res)=>{
 

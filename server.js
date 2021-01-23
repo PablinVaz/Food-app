@@ -22,6 +22,7 @@ app.use(express.urlencoded({extended:false}));
 // ROUTES
 app.use(require('./routes/index.routes'));
 app.use(require('./routes/meal.routes'));
+app.use(require('./routes/cart.routes'));
 
 app.use(express.static(__dirname + '/public'));
 

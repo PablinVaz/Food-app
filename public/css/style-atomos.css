@@ -65,12 +65,12 @@ figure > img{
 }
 
 .suma {
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 6px 6px 6px 6px;
     font-size: 4.5vw;
 }
 
 .resta {
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
     font-size: 4.5vw;
 }
 
@@ -78,8 +78,15 @@ figure > img{
     color: var(--negro);
     font-size: 4.5vw;
     margin-bottom: 10px;
+    width: 5vw;
+    height: 6vw;
+     text-align: center;
 }
-
+.importe{
+    width: 18vw;
+    height: 6vw;
+    font-size: 4.5vw;
+}
 .btn-pedir {
     background: var(--naranja);
     border-radius: 50%;

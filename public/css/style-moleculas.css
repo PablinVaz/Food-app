@@ -15,7 +15,8 @@
 }
 
 .contadores{
-   text-align: center;
+   text-align: end;
+   width: 20vw;
 }
 
 .plato-info{
