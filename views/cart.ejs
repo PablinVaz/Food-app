@@ -2,14 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style-atomos.css">
-    <link rel="stylesheet" href="../css/style-moleculas.css">
-    <link rel="stylesheet" href="../css/style-organismos.css">
-    <link rel="stylesheet" href="../css/style-plantilla.css">
-    <link rel="stylesheet" href="../css/style-cart.css">
+    <%- include('./partials/head/links'); %>
+    <%- include('./partials/head/scripts'); %>
     <title> Cart || Food App </title>
 </head>
 <body>
-    <%-include('./partials/cart/cart_list'); %>
+    <%- include ('./partials/cart/cartHeader'); %> 
+    <%- include ('./partials/cart/cart_list'); %>
+    <%- include ('./partials/cart/cartFooter'); %>
 </body>
 </html>

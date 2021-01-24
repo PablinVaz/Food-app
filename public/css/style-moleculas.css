@@ -23,3 +23,9 @@
     text-align: center;
  }
 
+ .rowText{
+    background-color: inherit;
+ }
+.rowPrice{
+    background-color: inherit;
+}
