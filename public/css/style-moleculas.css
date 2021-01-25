@@ -25,7 +25,9 @@
 
  .rowText{
     background-color: inherit;
- }
+    margin: 0;
+}
 .rowPrice{
     background-color: inherit;
+    margin: 0;
 }
