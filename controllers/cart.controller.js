@@ -19,28 +19,28 @@ cartController.list = async (req,res)=>{
 
 }
 
-// cartController.changeQty = async (req,res)=>{
+cartController.changeQty = async (req,res)=>{
 
-//     const id = req.params.id;
-//     const qty = req.body.qty;
-//     const cartItem = await CartItem.findById(id);
-//     let finalQty = cartItem.qty - qty;
-//     const update = {qty:finalQty}
-//     if(finalQty == 0 || finalQty < 0){
-//         await cartItem.deleteOne();
-//         return res.redirect('/cart_list');
+    const id = req.params.id;
+    const qty = req.body.qty;
+    const cartItem = await CartItem.findById(id);
+    let finalQty = cartItem.qty - qty;
+    const update = {qty:finalQty}
+    if(finalQty == 0 || finalQty < 0){
+        await cartItem.deleteOne();
+        return res.redirect('/cart_list');
 
-//     }
-//     await CartItem.findOneAndUpdate(id,update);
-//     return res.redirect('/cart_list');
-
-// }
-cartController.delete = async (req,res)=>{
-
-    await CartItem.deleteOne({_id:req.params.id});
+    }
+    await CartItem.findOneAndUpdate(id,update);
     return res.redirect('/cart_list');
 
 }
+// cartController.delete = async (req,res)=>{
+
+//     await CartItem.deleteOne({_id:req.params.id});
+//     return res.redirect('/cart_list');
+
+// }
 
 
 cartController.confirm = async (req,res)=>{
